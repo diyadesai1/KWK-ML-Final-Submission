@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { NavBar } from './components/NavBar.tsx';
 import { Home } from './pages/Home.tsx';
 import { PresentationVideo } from './pages/PresentationVideo.tsx';
@@ -11,14 +11,14 @@ function NotFound() {
     <div className="max-w-2xl mx-auto px-4 py-16 text-center">
       <h1 className="text-amber-700 mb-4">404 - Page Not Found</h1>
       <p className="text-gray-600 mb-6">The page you are looking for does not exist.</p>
-      <a href="/" className="inline-block px-5 py-3 rounded-md bg-amber-600 text-white text-sm font-medium shadow hover:bg-amber-500 transition-colors">Return Home</a>
+      <Link to="/" className="inline-block px-5 py-3 rounded-md bg-amber-600 text-white text-sm font-medium shadow hover:bg-amber-500 transition-colors">Return Home</Link>
     </div>
   );
 }
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
         <NavBar />
         <Suspense fallback={<div className="p-8 text-center text-amber-700">Loading...</div>}>
