@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global tweaks */
+html, body, #root { height: 100%; }
+body { @apply antialiased bg-amber-50 text-amber-900; }
+
+/* Typography refinements */
+h1 { @apply text-3xl font-semibold tracking-tight; }
+
+/* Utility helpers */
+.gradient-heading { @apply text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600; }
