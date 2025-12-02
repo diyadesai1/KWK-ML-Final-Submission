@@ -11,16 +11,27 @@ export function SlideDeck() {
           <h1 className="text-amber-800">Slide Deck</h1>
         </div>
         
-        <div className="aspect-video bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center mb-6 border-2 border-amber-200">
-          <div className="text-center p-8">
-            <FileText className="w-16 h-16 text-amber-400 mx-auto mb-4" />
-            <p className="text-gray-600 mb-4">
-              Slide deck will be embedded here
-            </p>
-            <p className="text-gray-500">
-              Add your Google Slides or PDF viewer embed code
-            </p>
-          </div>
+        {/* Embedded Canva slide deck */}
+        <div className="aspect-video rounded-lg overflow-hidden mb-3 border-2 border-amber-200 bg-white">
+          <iframe
+            src="https://www.canva.com/design/DAG6QbnkRv8/pogqugf4PLAK3rW8ynHe7g/view?embed"
+            title="Slide Deck"
+            className="w-full h-full"
+            allow="fullscreen"
+            allowFullScreen
+          />
+        </div>
+        <div className="flex items-center justify-between mb-6">
+          <p className="text-gray-600 text-sm">If the embed does not load, open the slide deck in a new tab.</p>
+          <a
+            href="https://www.canva.com/design/DAG6QbnkRv8/pogqugf4PLAK3rW8ynHe7g/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500"
+          >
+            <FileText className="w-4 h-4" />
+            Open in Canva
+          </a>
         </div>
         
         <div className="prose max-w-none">

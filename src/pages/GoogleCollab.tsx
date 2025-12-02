@@ -11,16 +11,23 @@ export function GoogleCollab() {
           <h1 className="text-amber-800">Google Colab Notebook</h1>
         </div>
         
-        <div className="aspect-video bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center mb-6 border-2 border-amber-200">
-          <div className="text-center p-8">
-            <Code className="w-16 h-16 text-amber-400 mx-auto mb-4" />
-            <p className="text-gray-600 mb-4">
-              Google Colab notebook will be embedded here
-            </p>
-            <p className="text-gray-500">
-              Add your Colab notebook embed code or link
-            </p>
+        <div className="aspect-video bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center mb-6 border-2 border-amber-200 overflow-hidden">
+          {/* Colab disallows embedding in iframes. Show a helpful message instead. */}
+          <div className="p-6 text-center">
+            <p className="text-amber-800 font-medium mb-2">Embedded preview unavailable</p>
+            <p className="text-gray-600">Google Colab blocks embedding. Use the button below to open the notebook in a new tab.</p>
           </div>
+        </div>
+        
+        <div className="text-center mb-8">
+          <a
+            href="https://colab.research.google.com/drive/1BEA_2H_2zzr6UqHq047NEuCSObpXQ9rW?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-5 py-3 rounded-md bg-amber-600 text-white text-sm font-medium shadow hover:bg-amber-500 transition-colors"
+          >
+            Open in Google Colab
+          </a>
         </div>
         
         <div className="prose max-w-none">

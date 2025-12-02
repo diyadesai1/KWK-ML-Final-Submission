@@ -11,16 +11,26 @@ export function PresentationVideo() {
           <h1 className="text-amber-800">Presentation Video</h1>
         </div>
         
-        <div className="aspect-video bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center mb-6 border-2 border-amber-200">
-          <div className="text-center p-8">
-            <Video className="w-16 h-16 text-amber-400 mx-auto mb-4" />
-            <p className="text-gray-600 mb-4">
-              Video presentation will be embedded here
-            </p>
-            <p className="text-gray-500">
-              Add your video URL or embed code
-            </p>
-          </div>
+        <div className="aspect-video rounded-lg overflow-hidden mb-6 border-2 border-amber-200 bg-white">
+          <iframe
+            src="https://drive.google.com/file/d/14yigpgnpKolc_Qv-nl48ch9gVRaVY2wt/preview"
+            title="Presentation Video"
+            className="w-full h-full"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        </div>
+        <div className="flex items-center justify-between mb-6">
+          <p className="text-gray-600 text-sm">If the video does not load, open it in Google Drive.</p>
+          <a
+            href="https://drive.google.com/file/d/14yigpgnpKolc_Qv-nl48ch9gVRaVY2wt/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500"
+          >
+            <Video className="w-4 h-4" />
+            Open in Drive
+          </a>
         </div>
         
         <div className="prose max-w-none">
