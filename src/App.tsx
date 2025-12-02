@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { NavBar } from './components/NavBar.tsx';
 import { Home } from './pages/Home.tsx';
 import { PresentationVideo } from './pages/PresentationVideo.tsx';
@@ -18,7 +18,7 @@ function NotFound() {
 
 export default function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
         <NavBar />
         <Suspense fallback={<div className="p-8 text-center text-amber-700">Loading...</div>}>
