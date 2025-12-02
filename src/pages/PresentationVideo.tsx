@@ -13,7 +13,7 @@ export function PresentationVideo() {
         
         <div className="aspect-video rounded-lg overflow-hidden mb-6 border-2 border-amber-200 bg-white">
           <iframe
-            src="https://drive.google.com/file/d/14yigpgnpKolc_Qv-nl48ch9gVRaVY2wt/preview"
+            src="https://drive.google.com/file/d/1Koihg2CgsecrGkOibHig3DP7aQulHAni/preview"
             title="Presentation Video"
             className="w-full h-full"
             allow="autoplay; encrypted-media"
@@ -23,7 +23,7 @@ export function PresentationVideo() {
         <div className="flex items-center justify-between mb-6">
           <p className="text-gray-600 text-sm">If the video does not load, open it in Google Drive.</p>
           <a
-            href="https://drive.google.com/file/d/14yigpgnpKolc_Qv-nl48ch9gVRaVY2wt/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Koihg2CgsecrGkOibHig3DP7aQulHAni/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500"
